@@ -20,6 +20,18 @@ React-приложение для отправки и получения **те�
 
 ![Проверка мобильного интерфейса](docs/screenshots/phone.jpg)
 
+### Проверка опубликованного сайта
+
+Веб-версия открыта с GitHub Pages; отправка и ответ проверены в демонстрационном режиме.
+
+![Отправка и демонстрационный ответ на опубликованном сайте](docs/screenshots/published-site.jpg)
+
+### Автоматические тесты и публикация
+
+Все 36 тестов и оба задания `build` / `deploy` успешно выполнены в [GitHub Actions](https://github.com/daredevilg7/greenapi/actions/runs/37197122328).
+
+![Успешные тесты и публикация в GitHub Actions](docs/screenshots/github-actions.jpg)
+
 Подробные сценарии, результаты 36 автоматических тестов и ограничения реального API-прогона: [отчёт о проверках](docs/verification.md).
 
 ## Быстрый запуск
@@ -27,6 +39,8 @@ React-приложение для отправки и получения **те�
 Нужны Node.js 22.20+ и npm. Проект проверен с Node.js 22.20.0.
 
 ```bash
+git clone https://github.com/daredevilg7/greenapi.git
+cd greenapi
 npm ci
 npm run dev
 ```
