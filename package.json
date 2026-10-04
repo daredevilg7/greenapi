@@ -1,0 +1,37 @@
+{
+  "name": "max-green-api-chat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --base=/greenapi/",
+    "preview": "vite preview --host 127.0.0.1",
+    "preview:pages": "vite preview --host 127.0.0.1 --base=/greenapi/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:api": "vitest run tests/api.http.test.ts",
+    "test:api:live": "vitest run --config vitest.live.config.ts",
+    "test:api:receive": "GREEN_API_TEST_MODE=receive vitest run --config vitest.live.config.ts",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "lucide-react": "^1.51.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}
